@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <main>
+            <b><h2>Inscrição Para Curso</h2></b>
+
+        <form action="/enviar-formulario" method="post">
+            <div>
+                    <label for="nome"><b>Nome:</b></label>
+                    <br>
+                    <input type="text" id="nome" name="nome_usuario" required>
+                </div>
+        
+                <br>
+
+                <div>
+                    <label for="idade"><b>Idade:</b></label>
+                    <br>
+                    <input type="number" id="idade" name="idade_usuario" required>
+                </div>
+        
+                <br>
+
+                <div>
+                    <label for="email"><b>E-mail:</b></label>
+                    <br>
+                    <input type="email" id="email" name="email_usuario" required>
+                </div>
+
+                <br>
+
+                <label for="data"><b>Data de Nascimento:</b></label><br>
+                <input type="date" id="data" name="data" required><br><br>
+
+                <br>
+
+              <label for="hora"><b>Selecione a hora :</b></label><br>
+                <input type="time" id="hora" name="hora" required><br><br>
+
+                <br>
+        
+                <div>
+                    <label for="telefone"><b>Telefone:</b></label>
+                    <br>
+                    <input type="tel" id="telefone" name="telefone_usuario"  title="Inclua o DDD no formato: (99) 99999-9999">
+                </div>
+        
+                <br>
+        
+                <div>
+                    <label for="site"><b>Link do Linkedin:</b></label>
+                    <br>
+                    <input type="url" id="site" name="site_usuario" required>
+                </div>
+        
+                <br>
+                <div>
+                    <p><b>Qual tuno você estuda?</b> </p>
+                    <input type="radio" id="turnoManha" name="turno" value="manhã" required>
+                    <label for="turnoManha"><b>Manhã</b></label>
+                    <input type="radio" id="turnoTarde" name="turno" value="tarde">
+                    <label for="turnoTarde"><b>Tarde</b></label>
+                    <input type="radio" id="turnoNoite" name="turno" value="noite">
+                    <label for="turnoNoite"><b>Noite</b></label>
+                </div>
+                    
+                <div>
+                    <p><b>Qual curso você tem interesse de fazer?</b> </p>
+                    <input type="checkbox" id="interesseProgramacao" name="interesse" value="Programação">
+                    <label for="interesseProgramacao"><b>Programação</b></label>
+                   
+                    <input type="checkbox" id="interesseBancodedados" name="interesse" value="Banco de Dados">
+                    <label for="interesseBancodedados"><b>Banco de Dados</b></label>
+
+                    <input type="checkbox" id="interesseRedes" name="interesse" value="Redes">
+                    <label for="interesseRedes"><b>Redes</b></label>
+
+                    <input type="checkbox" id="interesseDesign" name="interesse" value="Design">
+                    <label for="interesseDesign"><b>Design</b></label>
+                </div>
+                    <br>
+
+                    <div>
+                        <label for="curso"><b> Selecione o curso: </b></label> <br> 
+                        <select id="curso" name="curso" required>
+                            <option value=""><b>-- Opções de cursos: --</b></option>
+                            <option value="informatica"> Informatica</option>
+                            <option value="eletrotecnica"> Eletrotécnica</option>
+                            <option value="mecanica">Mecânica</option>
+                            <option value="administracao"> Administração</option>
+                        </select>
+                    </div>
+
+                    <br>
+
+                    <label for="curriculo"><b>Envie seu currículo (PDF):</b></label>
+                    <br>
+                    <input type="file" id="curriculo" name="curriculo" accept=".pdf" required>
+
+                
+                <br>
+                    <br>
+
+                 <div>
+                    <label for="mensagem"><b>Mensagem:</b></label>
+                    <br>
+                    <textarea id="mensagem" name="mensagem_usuario" maxlength="200" rows="5" cols="40"></textarea>
+                </div>
+
+                 <div>
+                    <input type="submit" value="Enviar">
+                </div>
+                    
+                <br>
+
+                 <label for="senha"><b>Criar Senha:</b></label>
+                    <br>
+                    <input type="password" id="senha" name="senha" required>
+
+                    <br>
+
+                    <label for="confirmesuasenha"><b> Confirme sua Senha:</b></label>
+                    <br>
+                    <input type="password" id="confirmesuasenha" name="senha"  minlength="8" required>
+
+                    <div>
+                    <input type="submit" value="Confirmar">
+                </div>
+
+
+
+
+        
+            </form>
+         
+        
+
+    </main>
+</body>
+</html>
